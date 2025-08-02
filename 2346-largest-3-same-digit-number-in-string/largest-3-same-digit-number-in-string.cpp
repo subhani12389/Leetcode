@@ -3,15 +3,18 @@ public:
     string largestGoodInteger(string num) {
         string ans="";
         int maxi=INT_MIN;
-        for(int i=0;i<num.size()-2;i++){
+        int st=0;
+        int end=num.size()-2;
+        while(end>=st){
             string ph="";
-            if(num[i]==num[i+1] && num[i]==num[i+2] && int (num[i])>maxi){
-                ph+=num[i];
-                ph+=num[i+1];
-                ph+=num[i+2];
+            if(num[st]==num[st+1] && num[st]==num[st+2] && int (num[st])>maxi){
+                ph+=num[st];
+                ph+=num[st+1];
+                ph+=num[st+2];
                 ans=ph;
-                maxi=int(num[i]);
+                maxi=int(num[st]);
             }
+            st++;
         }
         return ans;
     }
