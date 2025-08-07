@@ -20,7 +20,7 @@ public:
                 x--;
             }
             key=to_string(x) + "_" + to_string(y);
-            if(st.find(key)!=st.end()){
+            if(st.count(key)){
                 return true;
             }
             st.insert(key);
