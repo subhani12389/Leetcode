@@ -1,17 +1,15 @@
-#include <bits/stdc++.h>
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        int num = 0;
-        for(int i = 0; pow(3,i) <= n; i++){
-            num = pow(3,i);
-            if(num == n) return true;
+        int result=0;
+        int st=0;
+        while(pow(3,st)<=n){
+            result=pow(3,st);
+            if(result==n){
+                return true;
+            }
+            st++;
         }
         return false;
-        // int i = 0;
-        // do{
-        //     i++;
-        // }while(pow(3,i)<=n);
-
     }
 };
