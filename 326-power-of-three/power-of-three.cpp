@@ -3,7 +3,7 @@ public:
     bool isPowerOfThree(int n) {
         double result=0;
         int st=0;
-        while(pow(3,st)<=n){
+        while(result<=n){
             result=pow(3,st);
             if(result==n){
                 return true;
