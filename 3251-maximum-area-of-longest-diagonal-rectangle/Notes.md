@@ -1,0 +1,1 @@
+<h2>maximum-area-of-longest-diagonal-rectangle Notes</h2><hr>[ Time taken: 1 d 11 hrs 55 m 2 s ]
