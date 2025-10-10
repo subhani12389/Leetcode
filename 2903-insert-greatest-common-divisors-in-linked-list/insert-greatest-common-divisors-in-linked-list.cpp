@@ -22,10 +22,11 @@ public:
                 }
             }
             ListNode* node=new ListNode(g);
-            current->next=node;
-            node->next=currnext;
-            current=currnext;
-            currnext=currnext->next;
+            node->next = currnext;             // link new node to next
+            current->next = node;              // link current to new node
+
+            current = currnext;                // move to next original node
+            currnext = currnext->next;
         }
         return head;
     }
