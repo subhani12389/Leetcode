@@ -13,7 +13,6 @@ public:
                 if(copy==st){
                     count+=1;
                 }
-                copy="";
             }
         }
         return count;
