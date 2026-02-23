@@ -5,13 +5,11 @@ public:
         for(auto i:s){
             freq[i]++;
         }
-        int st=0;
-        int end=s.size()-1;
-        while(end>=st){
-            if(freq[s[st]]==1){
-                return st;
+        for(int j=0;j<s.size();j++){
+            if(freq[s[j]]==1){
+                return j;
+                break;
             }
-            st++;
         }
         return -1;
     }
